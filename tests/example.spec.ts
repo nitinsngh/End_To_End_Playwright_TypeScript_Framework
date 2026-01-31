@@ -8,7 +8,7 @@ test('@Smoke Verify homepage title', async ({ page }) => {
 });
 
 test('@Smoke get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('https://automationexercise.com/');
 
   // Click the get started link.
   await page.getByRole('link', { name: 'Get started' }).click();
