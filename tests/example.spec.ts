@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test('@Smoke Verify homepage title', async ({ page }) => {
+  await page.goto('https://automationexercise.com/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/Automation Exercise/);
 });
 
-test('get started link', async ({ page }) => {
+test('@Smoke get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
